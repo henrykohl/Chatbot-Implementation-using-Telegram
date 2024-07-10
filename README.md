@@ -19,6 +19,7 @@
 > pip install -r requirements.txt
 > ```
 
+* [aiogram 參考文件 (documentation)](https://docs.aiogram.dev/en/latest/)
 
 * 建立 `reseach/echo_bot.py`
 > ```bash
