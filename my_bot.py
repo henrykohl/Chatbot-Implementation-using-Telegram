@@ -27,7 +27,8 @@ class Reference:
         self.response = ""
 
 """
-在 ChatGPT 中 輸入： give me a python code to add 2 numbers
+在 ChatGPT 中 ，不是在 Telegram 中
+輸入： give me a python code to add 2 numbers
 再輸入： i need without using function
 """
 
