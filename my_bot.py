@@ -102,7 +102,10 @@ async def main_bot(message: types.Message):
     )
     reference.response = response['choices'][0]['message']['content']
     print(f">>> chatGPT: \n\t{reference.response}")
-    await bot.send_message(chat_id = message.chat.id, text = reference.response)
+    """old style(Lecture)"""
+    # await bot.send_message(chat_id = message.chat.id, text = reference.response)
+    """new style(my test)"""
+    await message.answer("GPT answer:"+reference.response)
 
 """
 在 Telegram 輸入：

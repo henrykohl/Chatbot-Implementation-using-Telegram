@@ -18,8 +18,25 @@
 > ```bash
 > pip install -r requirements.txt
 > ```
+> 注意，openai使用 0.28.1，如果使用最新版 openai >=1.0.0 ，在`my_bot.py` 中  openai 使用方式將有所不一樣
+> 
+> 舉例1--使用openai=0.28.1 
+> ```python
+> import openai
+> 
+> openai.api_key="..."
+> openai.ChatCompletion.create()
+> ```
+> 舉例2--使用openai>=1.0.0
+> ```python 
+> from openai import OpenAI
+>
+> client = OpenAI(api_key="...")
+> client.chat.completions.create()
+> ```
 
-* [aiogram 參考文件 (documentation)](https://docs.aiogram.dev/en/latest/)
+* [aiogram 2.5 參考文件 (documentation)](https://docs.aiogram.dev/en/v2.25.1/quick_start.html)
+> [aiogram 最新版參考文件]  (https://docs.aiogram.dev/en/latest/)
 
 * 建立 `reseach/echo_bot.py`
 > ```bash
